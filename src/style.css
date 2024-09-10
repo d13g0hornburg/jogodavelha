@@ -1,0 +1,71 @@
+/* Adicionando estilo ao fundo da página */
+body {
+    background-color: black;
+    color: white; /* Cor do texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Define a altura da viewport */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  /* Estilizando o quadrado individual (aumentando para 50% da tela) */
+  .square {
+    background-color: white;
+    border: 1px solid #999;
+    float: left;
+    font-size: 2.5vw; /* Ajuste relativo ao tamanho da tela */
+    font-weight: bold;
+    line-height: 2.5vw; /* Igual ao font-size para manter o quadrado */
+    height: 10vw; /* 10% da largura da tela */
+    width: 10vw; /* 10% da largura da tela */
+    margin-right:1px;
+    margin-top: 1px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Limpar flutuações */
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  /* Adicionando estilo ao status */
+  .status {
+    margin-bottom: 10px;
+    font-size: 1.5vw; /* Ajuste o tamanho do status */
+  }
+  
+  /* Estilo para a lista de movimentos */
+  .game-info ol {
+    padding-left: 30px;
+  }
+  
+  /* Estilo para o botão de movimento */
+  .game-info button {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Centralizando o conteúdo da game */
+  .game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Ajusta o tamanho do tabuleiro */
+  .game-board {
+    width: 50vw; /* 50% da largura da tela */
+    height: 50vw; /* 50% da largura da tela */
+  }
+  
